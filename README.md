@@ -2,7 +2,7 @@
 
 Designer hand-off page for the Dexii app: every theme, colour role and hex value as written in code.
 
-**Live page:** https://megabottty.github.io/colorPalette/
+**Live page:** https://dexii-palette.web.app
 
 ## Development
 
@@ -15,7 +15,17 @@ npm test         # unit tests
 npm run build    # production build in dist/dexii-palette/browser
 ```
 
-Pushing to `main` builds and deploys the site to GitHub Pages (`.github/workflows/deploy.yml`).
+## Deploying
+
+The live page is on Firebase Hosting (project `dexii-palette`):
+
+```bash
+npm run build
+firebase deploy --only hosting
+```
+
+Pushing to `main` also builds and deploys a mirror to GitHub Pages at
+https://megabottty.github.io/colorPalette/ (`.github/workflows/deploy.yml`).
 
 ## Updating the colours
 

@@ -1,0 +1,6 @@
+{
+  "hosting": {
+    "public": "dist/dexii-palette/browser",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+  }
+}
