@@ -1,0 +1,43 @@
+/* Page tokens. These style the hand-off page itself (Pearl by day, a plum dark mode by night),
+   not the Dexii themes it documents. */
+:root {
+  color-scheme: light;
+  --bg: #fffafa;
+  --surface: #f5f3f4;
+  --text: #4a374a;
+  --muted: #866386;
+  --primary: #8d5e94;
+  --accent: #d4af37;
+  --border: #e2d1e2;
+  --low: #b91c1c;
+  --display: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
+  --body: 'Source Sans 3', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #120b14;
+    --surface: #1e1420;
+    --text: #f3eaf4;
+    --muted: #b89bb9;
+    --primary: #c19bc7;
+    --accent: #e2c365;
+    --border: #3a2a3d;
+    --low: #f87171;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 1rem;
+  line-height: 1.5;
+}
